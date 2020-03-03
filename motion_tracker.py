@@ -7,7 +7,7 @@ captured_video = cv2.VideoCapture("video.avi")
 _, first_frame = captured_video.read()
 _, second_frame = captured_video.read()
 
-while captured_video.isOpened():
+while(1):
 
     # Movement as a diffrence between two frames
     diff = cv2.absdiff(first_frame, second_frame)
